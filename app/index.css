@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@layer components {
+  /* Heading Styles */
+  .heading-primary {
+    @apply text-[#00313D] font-[Poppins] text-[24px] sm:text-[28px] md:text-[34px] font-bold leading-[32px] sm:leading-[36px] md:leading-[42px];
+  }
+
+  /* Text Styles */
+  .text-body {
+    @apply text-[#001719] font-[Poppins] text-[16px] sm:text-[18px] md:text-[20px] font-normal leading-[26px] sm:leading-[28px] md:leading-[32px];
+  }
+}
