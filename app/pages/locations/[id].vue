@@ -54,7 +54,7 @@ const cards = Object.entries(svgModules).map(([path, module]) => {
       />
     </div>
 
-    <AirbnbCard/>
+    <AirbnbCard :imageSrc="imageSrc"/>
   </div>
 </template>
 

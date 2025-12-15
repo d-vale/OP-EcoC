@@ -1,13 +1,14 @@
 <template>
-  <div class="px-5 md:px-10 lg:px-20">
+  <div>
     <NuxtRouteAnnouncer />
     <TheNavbar />
-    <NuxtPage />
+    <div class="px-5 md:px-10 lg:px-20"><NuxtPage /></div>
+    <TheFooter />
   </div>
 </template>
 
 <style>
-  body {
-    background-color: #F3F3F3;
-  }
+body {
+  background-color: #f3f3f3;
+}
 </style>
