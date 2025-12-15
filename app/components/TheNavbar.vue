@@ -50,7 +50,7 @@ watch(isMobileMenuOpen, (isOpen) => {
       >
         <nav
           aria-labelledby="header-nav"
-          class="flex items-center justify-between px-4 py-3 md:px-6 lg:px-8 h-[72px]"
+          class="flex items-center justify-between px-4 py-3 md:px-6 lg:px-8 h-18"
         >
           <h2 class="sr-only" id="header-nav">Navigation principale</h2>
 
@@ -125,7 +125,7 @@ watch(isMobileMenuOpen, (isOpen) => {
                   :aria-expanded="isLanguageDropdownOpen"
                   aria-haspopup="listbox"
                   aria-controls="dropdown-list"
-                  class="flex items-center gap-2 px-4 border border-gray-300 rounded-3xl bg-white cursor-pointer transition-all duration-200 min-w-[130px] h-10 hover:border-[#0085c7] hover:shadow-[0_2px_4px_rgba(0,0,0,0.1)]"
+                  class="flex items-center gap-2 px-4 border border-gray-300 rounded-3xl bg-white cursor-pointer transition-all duration-200 `min-w-32.5 h-10 hover:border-[#0085c7] hover:shadow-[0_2px_4px_rgba(0,0,0,0.1)]"
                   @click="toggleLanguageDropdown"
                   @keydown.enter="toggleLanguageDropdown"
                   @keydown.space.prevent="toggleLanguageDropdown"
@@ -161,7 +161,7 @@ watch(isMobileMenuOpen, (isOpen) => {
                   role="listbox"
                   aria-label="Options de langue"
                   tabindex="-1"
-                  class="absolute top-[calc(100%+8px)] right-0 bg-white border border-gray-300 rounded-xl shadow-[0_8px_24px_rgba(0,0,0,0.15)] min-w-[180px] max-h-[400px] overflow-y-auto z-[1000] py-2"
+                  class="absolute top-[calc(100%+8px)] right-0 bg-white border border-gray-300 rounded-xl shadow-[0_8px_24px_rgba(0,0,0,0.15)] min-w-45 max-h-100 overflow-y-auto z-1000 py-2"
                 >
                   <a
                     v-for="lang in languages"
