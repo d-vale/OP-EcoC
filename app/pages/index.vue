@@ -1,5 +1,6 @@
 <script setup>
 import Carousel from '~/components/home/Base-carousel.vue';
+import TheCountdown from '~/components/home/TheCountdown.vue';
 
 const carouselSlides = [
   {
@@ -43,8 +44,12 @@ const carouselSlides = [
 <template>
   <div class="home-page">
     <!-- Hero Carousel -->
-    <section class="carousel-section">
+    <section class="carousel-section relative">
       <Carousel :slides="carouselSlides" :autoplay-interval="5000" />
+      <!-- Countdown positioned at bottom of carousel -->
+      <div class="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 z-10 w-full max-w-fit px-4">
+        <TheCountdown />
+      </div>
     </section>
   </div>
 </template>
