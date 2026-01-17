@@ -1,8 +1,14 @@
 <script setup>
-// Vous pouvez ajouter des données dynamiques ici plus tard
-const heroImage =
-  "https://img.olympics.com/images/image/private/t_16-9_1920/f_auto/primary/o113dathv4krz4velfkd";
-const heroTitle = "Anterselva / Antholz";
+defineProps({
+  src: {
+    type: String,
+    required: true,
+  },
+  title: {
+    type: String,
+    required: true,
+  },
+});
 </script>
 
 <template>
@@ -11,25 +17,13 @@ const heroTitle = "Anterselva / Antholz";
       class="hero-container rounded-xl md:rounded-2xl lg:rounded-4xl relative w-full h-125 md:h-150 lg:h-175 overflow-hidden"
     >
       <!-- Hero Image -->
-      <picture class="hero-image">
-        <source
-          media="(min-width: 1024px) and (max-width: 1439px)"
-          :srcset="`${heroImage}, ${heroImage} 2x`"
-        />
-        <source
-          media="(min-width: 768px) and (max-width: 1023px)"
-          :srcset="`${heroImage}, ${heroImage} 2x`"
-        />
-        <source
-          media="(max-width: 575px)"
-          :srcset="`${heroImage}, ${heroImage} 2x`"
-        />
-        <img
-          :src="heroImage"
-          :alt="heroTitle"
-          class="w-full h-full object-cover"
-        />
-      </picture>
+      <img
+        :src="src"
+        :alt="title"
+        class="w-full h-full object-cover"
+        loading="eager"
+        sizes="100vw"
+      />
 
       <!-- Overlay gradient -->
       <div
@@ -41,7 +35,7 @@ const heroTitle = "Anterselva / Antholz";
         <h1
           class="text-white text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight"
         >
-          {{ heroTitle }}
+          {{ title }}
         </h1>
       </div>
     </div>

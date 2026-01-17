@@ -6,10 +6,8 @@ import HeroImage from "~/components/locations/Base-HeroImage.vue";
 import BaseImage from "~/components/locations/Base-Image.vue";
 import BaseText from "~/components/locations/Base-Text.vue";
 
-const imageSrc =
-  "https://img.olympics.com/images/image/private/t_s_4_3_g_auto/t_s_w2440/f_auto/primary/zvzahm5qekgqe12s7k6u";
-const heroImage =
-  "https://img.olympics.com/images/image/private/t_16-9_1920/f_auto/primary/o113dathv4krz4velfkd";
+const imageSrc = "/locations/Anterselva.webp";
+const heroImage = "/locations/Anterselva.webp";
 
 // Import tous les SVG du dossier
 const svgModules = import.meta.glob("~/svg/*.vue", { eager: true });
@@ -40,9 +38,9 @@ const cards = Object.entries(svgModules).map(([path, module]) => {
 
 <template>
   <div class="flex gap-15 pb-15 flex-col">
-    <HeroImage />
+    <HeroImage :src="heroImage" title="Anterselva / Antholz" />
     <BaseText />
-    <BaseImage :src="heroImage" />
+    <BaseImage :src="imageSrc" />
     <BaseAirbnbCard :imageSrc="imageSrc" />
 
     <div class="cards-slider">
@@ -54,7 +52,7 @@ const cards = Object.entries(svgModules).map(([path, module]) => {
       />
     </div>
 
-    <AirbnbCard :imageSrc="imageSrc"/>
+    <AirbnbCard :imageSrc="imageSrc" />
   </div>
 </template>
 
