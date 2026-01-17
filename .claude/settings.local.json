@@ -8,7 +8,14 @@
       "mcp__figma__get_screenshot",
       "mcp__figma__get_design_context",
       "mcp__figma__get_metadata",
-      "Bash(curl:*)"
+      "Bash(curl:*)",
+      "Bash(npm run dev:*)",
+      "mcp__Figma_Desktop__get_design_context",
+      "mcp__Figma_Desktop__get_screenshot"
     ]
-  }
+  },
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "Figma Desktop"
+  ]
 }
