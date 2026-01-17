@@ -3,7 +3,10 @@
     "allow": [
       "Bash(mkdir:*)",
       "Bash(npm install:*)",
-      "Bash(npm uninstall:*)"
+      "Bash(npm uninstall:*)",
+      "Bash(claude mcp add:*)",
+      "mcp__figma__get_screenshot",
+      "mcp__figma__get_design_context"
     ]
   }
 }
