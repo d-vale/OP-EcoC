@@ -11,6 +11,11 @@ export default defineNuxtConfig({
 
   modules: ["@nuxt/image", "@nuxt/content"],
 
+  image: {
+    provider: "ipx",
+    static: true,
+  },
+
   nitro: {
     preset: "static",
     prerender: {
