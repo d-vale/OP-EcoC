@@ -30,14 +30,16 @@ const formatDate = (dateString) => {
 
 <template>
   <div class="relative w-full h-[400px] md:h-[500px] lg:h-[600px] rounded-4xl overflow-hidden">
-    <NuxtImg
-      :src="image"
-      :alt="title"
-      class="w-full h-full object-cover "
-      loading="eager"
-      width="1920"
-      height="600"
-    />
+    <picture>
+      <img
+        :src="image"
+        :alt="title"
+        class="w-full h-full object-cover"
+        loading="eager"
+        width="1920"
+        height="600"
+      />
+    </picture>
     <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
 
     <div class="absolute bottom-0 left-0 right-0 p-6 md:p-10 lg:p-14">

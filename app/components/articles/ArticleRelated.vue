@@ -31,14 +31,16 @@ const formatDate = (dateString) => {
           class="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow"
         >
           <div class="relative h-48 md:h-56 overflow-hidden">
-            <NuxtImg
-              :src="article.image"
-              :alt="article.title"
-              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-              width="400"
-              height="224"
-              loading="lazy"
-            />
+            <picture>
+              <img
+                :src="article.image"
+                :alt="article.title"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                width="400"
+                height="224"
+                loading="lazy"
+              />
+            </picture>
             <span
               v-if="article.category"
               class="absolute top-4 left-4 px-3 py-1 bg-[#22A5AB] text-white text-xs font-medium rounded-full"

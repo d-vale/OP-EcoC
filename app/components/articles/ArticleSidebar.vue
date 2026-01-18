@@ -19,14 +19,16 @@ defineProps({
         class="group flex gap-4 p-3 rounded-lg hover:bg-gray-100 transition-colors"
       >
         <div class="w-20 h-20 rounded-lg overflow-hidden flex-shrink-0">
-          <NuxtImg
-            :src="article.image"
-            :alt="article.title"
-            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-            width="80"
-            height="80"
-            loading="lazy"
-          />
+          <picture>
+            <img
+              :src="article.image"
+              :alt="article.title"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+              width="80"
+              height="80"
+              loading="lazy"
+            />
+          </picture>
         </div>
         <div class="flex flex-col justify-center flex-1 min-w-0">
           <span
