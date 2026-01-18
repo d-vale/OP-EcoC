@@ -10,7 +10,8 @@ import LatestNews from "~/components/home/LatestNews.vue";
 import ImmerseGames from "~/components/home/ImmerseGames.vue";
 import FeatureCard from "~/components/home/FeatureCard.vue";
 import SportTrivia from "~/components/home/SportTrivia.vue";
-
+import NextOlympicGames from "~/components/home/NextOlympicGames.vue";
+import OlympicWebsites from "~/components/home/OlympicWebsites.vue";
 const carouselSlides = [
   {
     id: 1,
@@ -83,6 +84,17 @@ const carouselSlides = [
       <OlympicShop />
     </section>
 
+    <section class="py-12 px-4 max-w-7xl mx-auto">
+      <picture>
+        <source srcset="/home/map.png" />
+        <img
+          src="/home/map.png"
+          alt="Milano Cortina 2026 venues map"
+          class="w-full h-auto rounded-lg shadow-lg"
+        />
+      </picture>
+    </section>
+
     <!-- Sports Cards -->
     <section class="py-12 px-4 max-w-7xl mx-auto">
       <SportsGrid />
@@ -124,6 +136,14 @@ const carouselSlides = [
         image-src="/home/winter-playing-fields.webp"
         image-alt="Winter sports collage"
       />
+    </section>
+
+    <section class="py-12 px-4 max-w-7xl mx-auto">
+      <NextOlympicGames />
+    </section>
+
+    <section class="mb-20 py-12 px-4 max-w-7xl mx-auto">
+      <OlympicWebsites />
     </section>
   </div>
 </template>
