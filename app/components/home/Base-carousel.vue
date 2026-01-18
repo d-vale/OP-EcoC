@@ -64,7 +64,7 @@ onUnmounted(() => {
 
 <template>
   <div
-    class="carousel-container relative w-full overflow-hidden"
+    class="carousel-container relative w-full overflow-hidden rounded-4xl" 
     @mouseenter="pauseAutoplay"
     @mouseleave="resumeAutoplay"
   >
