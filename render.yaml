@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: olympics-milano
+    runtime: static
+    buildCommand: npm install && npm run generate
+    staticPublishPath: .output/public
+    pullRequestPreviewsEnabled: true
