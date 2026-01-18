@@ -9,6 +9,7 @@ import SportsGrid from "~/components/home/SportsGrid.vue";
 import LatestNews from "~/components/home/LatestNews.vue";
 import ImmerseGames from "~/components/home/ImmerseGames.vue";
 import FeatureCard from "~/components/home/FeatureCard.vue";
+import SportTrivia from "~/components/home/SportTrivia.vue";
 
 const carouselSlides = [
   {
@@ -94,6 +95,11 @@ const carouselSlides = [
     <!-- Immerse yourself in the Games -->
     <section class="py-12 px-4 max-w-7xl mx-auto">
       <ImmerseGames />
+    </section>
+
+    <!-- Sport Trivia -->
+    <section class="py-12 px-4 max-w-7xl mx-auto">
+      <SportTrivia button-link="#" />
     </section>
 
     <!-- Paralympic Winter Games -->
