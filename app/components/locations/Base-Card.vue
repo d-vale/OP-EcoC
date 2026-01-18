@@ -1,4 +1,4 @@
-<script setup>
+-<script setup>
 import FavoriteButton from "~/components/FavoriteButton.vue";
 
 defineProps({
@@ -18,7 +18,7 @@ defineProps({
 </script>
 
 <template>
-  <div class="flex flex-col size-fit">
+  <div class="flex flex-col w-full">
     <div class="gradient rounded-t-2xl">
       <component :is="svgComponent" :color="svgColor" />
       <div class="absolute top-2 right-2"></div>

@@ -11,7 +11,9 @@
       "Bash(curl:*)",
       "Bash(npm run dev:*)",
       "mcp__Figma_Desktop__get_design_context",
-      "mcp__Figma_Desktop__get_screenshot"
+      "mcp__Figma_Desktop__get_screenshot",
+      "Bash(cd:*)",
+      "Bash(npm run build:*)"
     ]
   },
   "enableAllProjectMcpServers": true,

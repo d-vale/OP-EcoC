@@ -4,6 +4,9 @@ import TheCountdown from "~/components/home/TheCountdown.vue";
 import LinksGrid from "~/components/home/LinksGrid.vue";
 import RoadToCalendar from "~/components/home/RoadToCalendar.vue";
 import BaseAirbnbCard from "~/components/locations/Base-AirbnbCard.vue";
+import OlympicShop from "~/components/home/OlympicShop.vue";
+import SportsGrid from "~/components/home/SportsGrid.vue";
+import LatestNews from "~/components/home/LatestNews.vue";
 
 const carouselSlides = [
   {
@@ -70,6 +73,21 @@ const carouselSlides = [
 
     <section class="py-12 px-4 max-w-7xl mx-auto">
       <BaseAirbnbCard imageSrc="/home/card-1.png" />
+    </section>
+    
+    <!-- Olympic Shop -->
+    <section class="py-12 px-4 max-w-7xl mx-auto">
+      <OlympicShop />
+    </section>
+
+    <!-- Sports Cards -->
+    <section class="py-12 px-4 max-w-7xl mx-auto">
+      <SportsGrid />
+    </section>
+
+    <!-- Latest News -->
+    <section class="py-12 px-4 max-w-7xl mx-auto">
+      <LatestNews />
     </section>
   </div>
 </template>
