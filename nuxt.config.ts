@@ -13,5 +13,23 @@ export default defineNuxtConfig({
 
   nitro: {
     preset: "static",
+    prerender: {
+      failOnError: false,
+      crawlLinks: true,
+      ignore: [
+        "/en/**",
+        "/it/**",
+        "/de/**",
+        "/pt/**",
+        "/es/**",
+        "/ja/**",
+        "/ar/**",
+        "/zh/**",
+        "/hi/**",
+        "/ko/**",
+        "/ru/**",
+        "/fr/**",
+      ],
+    },
   },
 });
