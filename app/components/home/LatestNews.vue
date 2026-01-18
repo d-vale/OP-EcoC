@@ -47,7 +47,7 @@ const bottomItems = newsItems.slice(2);
 <template>
   <div class="flex flex-col gap-4">
     <!-- Header -->
-    <NuxtLink to="/news" class="flex items-center gap-6 group w-fit">
+    <NuxtLink to="/" class="flex items-center gap-6 group w-fit">
       <h2 class="heading-primary">Latest news</h2>
       <svg
         class="w-8 h-8 text-[#00313D] transition-transform group-hover:translate-x-1"
