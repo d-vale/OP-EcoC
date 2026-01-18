@@ -8,6 +8,7 @@ import OlympicShop from "~/components/home/OlympicShop.vue";
 import SportsGrid from "~/components/home/SportsGrid.vue";
 import LatestNews from "~/components/home/LatestNews.vue";
 import ImmerseGames from "~/components/home/ImmerseGames.vue";
+import FeatureCard from "~/components/home/FeatureCard.vue";
 
 const carouselSlides = [
   {
@@ -93,6 +94,30 @@ const carouselSlides = [
     <!-- Immerse yourself in the Games -->
     <section class="py-12 px-4 max-w-7xl mx-auto">
       <ImmerseGames />
+    </section>
+
+    <!-- Paralympic Winter Games -->
+    <section class="py-12 px-4 max-w-7xl mx-auto">
+      <FeatureCard
+        title="The Paralympic Winter Games"
+        description="Paralympic athletes from all over the world will compete at the highest level at Milano Cortina 2026, redefining what is possible on snow and ice."
+        button-text="Find Out More"
+        button-link="#"
+        image-src="/home/paralympic-athlete.webp"
+        image-alt="Paralympic athlete skiing"
+      />
+    </section>
+
+    <!-- Watch Winter Playing Fields -->
+    <section class="py-12 px-4 max-w-7xl mx-auto">
+      <FeatureCard
+        title="Watch Winter Playing Fields"
+        description="Join the community for free and see how Olympic dreams take shape in the most unexpected places."
+        button-text="Join Now"
+        button-link="#"
+        image-src="/home/winter-playing-fields.webp"
+        image-alt="Winter sports collage"
+      />
     </section>
   </div>
 </template>
