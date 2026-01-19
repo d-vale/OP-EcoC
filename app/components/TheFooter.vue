@@ -1,72 +1,36 @@
 <script setup>
-import { ref } from 'vue'
+import { ref, markRaw } from 'vue'
+import AirbnbLogo from '~/svg/partners/AirbnbLogo.vue'
+import AlibabaLogo from '~/svg/partners/AlibabaLogo.vue'
+import AllianzLogo from '~/svg/partners/AllianzLogo.vue'
+import CocaColaLogo from '~/svg/partners/CocaColaLogo.vue'
+import CoronaLogo from '~/svg/partners/CoronaLogo.vue'
+import DeloitteLogo from '~/svg/partners/DeloitteLogo.vue'
+import OmegaLogo from '~/svg/partners/OmegaLogo.vue'
+import PgLogo from '~/svg/partners/PgLogo.vue'
+import TclLogo from '~/svg/partners/TclLogo.vue'
+import VisaLogo from '~/svg/partners/VisaLogo.vue'
+
+// Partner logos with inline SVG components (no HTTP requests)
+const partnerLogos = [
+  { name: 'Airbnb', component: markRaw(AirbnbLogo), url: '/partners#airbnb' },
+  { name: 'Alibaba', component: markRaw(AlibabaLogo), url: '/partners#alibaba' },
+  { name: 'Allianz', component: markRaw(AllianzLogo), url: '/partners#allianz' },
+  { name: 'Coca-Cola', component: markRaw(CocaColaLogo), url: '/partners#cocacola-mengniu' },
+  { name: 'Corona Cero', component: markRaw(CoronaLogo), url: '/partners#ab-inbev' },
+  { name: 'Deloitte', component: markRaw(DeloitteLogo), url: '/partners#deloitte' },
+  { name: 'Omega', component: markRaw(OmegaLogo), url: '/partners#omega' },
+  { name: 'P&G', component: markRaw(PgLogo), url: '/partners#pg' },
+  { name: 'Samsung', component: null, logo: '/partners/samsung.svg', url: '/partners#samsung' },
+  { name: 'TCL', component: markRaw(TclLogo), url: '/partners#tcl' },
+  { name: 'Visa', component: markRaw(VisaLogo), url: '/partners#visa' },
+]
 
 const props = defineProps({
   // Main logo
   mainLogo: {
     type: String,
-    default: 'https://gstatic.olympics.com/s3/mc2026/emblems/mico2026-emblem-oly-white.svg'
-  },
-  // Partners/Sponsors logos - avec les vraies URLs du site officiel
-  partners: {
-    type: Array,
-    default: () => [
-      { 
-        name: 'Airbnb', 
-        logo: 'https://img.olympics.com/images/image/private/t_mico_partner_v2/v1747644178/primary/qgrehhwbz80ffsgwiq2j', 
-        url: '/partners#airbnb' 
-      },
-      { 
-        name: 'Alibaba', 
-        logo: 'https://img.olympics.com/images/image/private/t_mico_partner_v2/v1746720216/primary/sir245g6rpsxd1sepdrh', 
-        url: '/partners#alibaba' 
-      },
-      { 
-        name: 'Allianz', 
-        logo: 'https://img.olympics.com/images/image/private/t_mico_partner_v2/v1746720251/primary/jsjprekgjjsg8ijcpjvk', 
-        url: '/partners#allianz' 
-      },
-      { 
-        name: 'Coca-Cola', 
-        logo: 'https://img.olympics.com/images/image/private/t_mico_partner_v2/v1746720299/primary/rf1dzqfi1chozkvryubp', 
-        url: '/partners#cocacola-mengniu' 
-      },
-      { 
-        name: 'Corona Cero', 
-        logo: 'https://img.olympics.com/images/image/private/t_mico_partner_v2/v1746720577/primary/muqexfmzedicfdm36mri', 
-        url: '/partners#ab-inbev' 
-      },
-      { 
-        name: 'Deloitte', 
-        logo: 'https://img.olympics.com/images/image/private/t_mico_partner_v2/v1746720328/primary/pvtwcygkaotlru2ldc4b', 
-        url: '/partners#deloitte' 
-      },
-      { 
-        name: 'Omega', 
-        logo: 'https://img.olympics.com/images/image/private/t_mico_partner_v2/v1746720356/primary/ucjmsrea6lxp9yadodir', 
-        url: '/partners#omega' 
-      },
-      { 
-        name: 'P&G', 
-        logo: 'https://img.olympics.com/images/image/private/t_mico_partner_v2/v1746720387/primary/umuiivkhuqrzxafubmhc', 
-        url: '/partners#pg' 
-      },
-      { 
-        name: 'Samsung', 
-        logo: 'https://img.olympics.com/images/image/private/t_mico_partner_v2/primary/h9k7r15munpklme6nioj', 
-        url: '/partners#samsung' 
-      },
-      { 
-        name: 'TCL', 
-        logo: 'https://img.olympics.com/images/image/private/t_mico_partner_v2/v1746720448/primary/a2t2vqmigvhqlrdnzsbn', 
-        url: '/partners#tcl' 
-      },
-      { 
-        name: 'Visa', 
-        logo: 'https://img.olympics.com/images/image/private/t_mico_partner_v2/v1746720477/primary/qfthngqum2mkfaxy3eee', 
-        url: '/partners#visa' 
-      }
-    ]
+    default: '/logos/mico2026-emblem-oly-white.svg'
   },
   // Navigation columns
   navigation: {
@@ -151,14 +115,14 @@ const props = defineProps({
       { name: 'Instagram', icon: 'instagram', url: '#' }
     ]
   },
-  // App store links
+  // App store links (self-hosted)
   appStoreUrl: {
     type: String,
-    default: 'https://img.olympics.com/images/image/private/t_original/primary/f4orztqs8nvmrlxsc9sv'
+    default: '/badges/app-store.svg'
   },
   googlePlayUrl: {
     type: String,
-    default: 'https://img.olympics.com/images/image/private/t_original/primary/zjdxd8nczbkn9aeftwfy'
+    default: '/badges/google-play.svg'
   },
   // Copyright
   copyrightYear: {
@@ -180,19 +144,28 @@ const props = defineProps({
         Worldwide Olympic and Paralympic Partners
       </h2>
       
-      <!-- Partners logos grid - 2 rows layout comme sur le site -->
+      <!-- Partners logos grid - 2 rows layout avec SVG inline (10 logos inline, 1 image locale) -->
       <ul class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-x-8 gap-y-6 sm:gap-x-12 sm:gap-y-8 lg:gap-x-16 lg:gap-y-10">
-        <li 
-          v-for="partner in partners" 
+        <li
+          v-for="partner in partnerLogos"
           :key="partner.name"
           class="flex items-center justify-start"
         >
-          <a 
+          <a
             :href="partner.url"
             class="block h-10 sm:h-12 lg:h-14 opacity-90 hover:opacity-100 transition-opacity duration-200"
           >
-            <img 
-              :src="partner.logo" 
+            <!-- Inline SVG component (no HTTP request) -->
+            <component
+              v-if="partner.component"
+              :is="partner.component"
+              :aria-label="partner.name"
+              class="h-full w-auto"
+            />
+            <!-- Fallback to img for large SVGs like Samsung -->
+            <img
+              v-else
+              :src="partner.logo"
               :alt="partner.name"
               loading="lazy"
               class="h-full w-auto object-contain"

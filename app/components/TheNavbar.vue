@@ -58,7 +58,7 @@ watch(isMobileMenuOpen, (isOpen) => {
             <li>
               <NuxtLink to="/" class="flex items-center no-underline">
                 <img
-                  src="https://gstatic.olympics.com/s3/mc2026/emblems/mico2026-emblem-oly.png"
+                  src="/logos/mico2026-emblem-oly.png"
                   alt="Jeux Olympiques d'Hiver Milano Cortina 2026"
                   class="h-10 md:h-11 lg:h-14 w-auto"
                 />
@@ -387,8 +387,6 @@ watch(isMobileMenuOpen, (isOpen) => {
 </template>
 
 <style scoped>
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
-
 .navbar-wrapper {
   margin-left: -80px;
   margin-right: -80px;
