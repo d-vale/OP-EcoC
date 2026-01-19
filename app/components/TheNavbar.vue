@@ -103,7 +103,7 @@ watch(isMobileMenuOpen, (isOpen) => {
           >
             <li id="loginProfile" class="hidden lg:block">
               <a
-                href="/sign-in"
+                href="/"
                 type="button"
                 class="inline-flex items-center justify-center px-6 py-2.5 bg-[#0085c7] text-white border-none rounded-3xl no-underline text-[13px] font-bold cursor-pointer transition-all duration-200 tracking-[0.3px] hover:bg-[#006ba6] hover:-translate-y-px hover:shadow-[0_4px_8px_rgba(0,133,199,0.3)]"
               >

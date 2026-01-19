@@ -14,7 +14,7 @@ defineProps({
   },
   link: {
     type: String,
-    default: '/trivia',
+    default: '/',
   },
 });
 </script>

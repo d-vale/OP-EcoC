@@ -5,36 +5,36 @@ category: "Biathlon"
 author:
   name: "Pierre Dupont"
   role: "Rédacteur Sport"
-  avatar: "/blog/contents/mock-article/img/hero.png"
+  avatar: "/blog/contents/mock-article/img/hero.webp"
 readingTime: 8
-hero: "/blog/contents/mock-article/img/hero.png"
+hero: "/blog/contents/mock-article/img/hero.webp"
 showPromoCard: true
 carousel:
-  - "/blog/contents/mock-article/img/carousel-img1.png"
-  - "/blog/contents/mock-article/img/carousel-img2.png"
-  - "/blog/contents/mock-article/img/carousel-img3.png"
+  - "/blog/contents/mock-article/img/carousel-img1.webp"
+  - "/blog/contents/mock-article/img/carousel-img2.webp"
+  - "/blog/contents/mock-article/img/carousel-img3.webp"
 relatedArticles:
   - id: "mock-article"
     title: "Les athlètes français à suivre pour Milano Cortina 2026"
-    image: "/blog/contents/mock-article/img/img1.png"
+    image: "/blog/contents/mock-article/img/img1.webp"
     category: "Équipe de France"
     date: "2024-12-10"
     excerpt: "Découvrez les talents tricolores qui feront vibrer les Jeux."
   - id: "mock-article"
     title: "Guide des sites olympiques de Milano Cortina"
-    image: "/blog/contents/mock-article/img/img2.png"
+    image: "/blog/contents/mock-article/img/img2.webp"
     category: "Sites"
     date: "2024-12-08"
     excerpt: "Explorez les différents sites qui accueilleront les épreuves."
   - id: "mock-article"
     title: "Le biathlon aux Jeux Olympiques : histoire et évolution"
-    image: "/blog/contents/mock-article/img/img3.png"
+    image: "/blog/contents/mock-article/img/img3.webp"
     category: "Histoire"
     date: "2024-12-05"
     excerpt: "Retour sur l'histoire de cette discipline emblématique."
   - id: "mock-article"
     title: "Préparation physique : les secrets des biathlètes"
-    image: "/blog/contents/mock-article/img/carousel-img1.png"
+    image: "/blog/contents/mock-article/img/carousel-img1.webp"
     category: "Entraînement"
     date: "2024-12-03"
 ---
@@ -73,9 +73,9 @@ Au-delà du tir, la condition physique des biathlètes français est exceptionne
 Ces performances constituent un signal fort à moins de deux ans des Jeux Olympiques d'hiver de Milano Cortina. L'équipe de France se positionne clairement parmi les favoris pour les médailles.
 
 ::div{class="flex flex-wrap gap-4 my-6"}
-  ::articles-button-link{title="Calendrier du biathlon à Milano Cortina 2026" link="/calendrier"}
+  ::articles-button-link{title="Calendrier du biathlon à Milano Cortina 2026" link="/"}
   ::
-  ::articles-button-link{title="Voir la vidéo" link="/video"}
+  ::articles-button-link{title="Voir la vidéo" link="/"}
   ::
 ::
 

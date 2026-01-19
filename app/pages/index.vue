@@ -76,7 +76,7 @@ const carouselSlides = [
     </section>
 
     <section class="py-12 px-4 max-w-7xl mx-auto">
-      <BaseAirbnbCard imageSrc="/home/card-1.png" />
+      <BaseAirbnbCard imageSrc="/home/card-1.webp" />
     </section>
 
     <!-- Olympic Shop -->
@@ -86,9 +86,9 @@ const carouselSlides = [
 
     <section class="py-12 px-4 max-w-7xl mx-auto">
       <picture>
-        <source srcset="/home/map.png" />
+        <source srcset="/home/map.webp" />
         <img
-          src="/home/map.png"
+          src="/home/map.webp"
           alt="Milano Cortina 2026 venues map"
           class="w-full h-auto rounded-lg shadow-lg"
         />
